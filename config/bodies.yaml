@@ -1,0 +1,14 @@
+# mocap_ros configuration
+qualisys_ip: "192.168.75.4"
+publishing_freq: 300      # Hz, must be in [1, 300]
+ref_frame: "base_link"
+
+bodies:
+  - name: "cube"
+    base_frame: "cube/base"
+    # publish_odometry defaults to false
+
+  - name: "origin"
+    base_frame: "origin/base"
+    # publish_odometry defaults to false
+
