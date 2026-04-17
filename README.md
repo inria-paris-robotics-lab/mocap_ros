@@ -6,15 +6,18 @@ Multiple rigid bodies can be tracked simultaneously; everything is driven by a s
 ---
 > [!IMPORTANT]
 > Please setup your QMT project to use **RealTime Streaming 1.24**
+---
+| Dependency              |
+| ----------------------- |
+| `qtm_rt` (Qualisys SDK) |
+| `PyKDL`                 |
+| `pydantic`              |
+| ROS 2 packages          |
+| `rclpy`                 |
+| `tf2_ros`               |
+| `geometry_msgs`         |
+| `nav_msgs`              |
 
-## Dependencies
-
-| Dependency | Install |
-|---|---|
-| `qtm_rt` (Qualisys SDK) | `pip install qtm-rt` |
-| `PyKDL` | `micromamba install python-orocos-kdl` |
-| ROS 2 packages | `rclpy`, `tf2_ros`, `geometry_msgs`, `nav_msgs` |
- micromamba install pydantic
 ---
 
 ## Build
