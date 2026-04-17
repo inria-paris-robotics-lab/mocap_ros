@@ -58,7 +58,7 @@ mocap_node:
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `qualisys_ip` | string | `192.168.75.4` | IP of the Qualisys machine |
-| `publishing_freq` | int | `110` | TF / Odometry publish rate in Hz (1–300) |
+| `publishing_freq` | int | `100` | TF / Odometry publish rate in Hz (1–300) |
 | `odom_frame` | string | `odom` | Fixed world frame id |
 | `bodies[i].name` | string | — | Body name **as set in Qualisys** |
 | `bodies[i].base_frame` | string | `<name>/base` | TF child frame to publish |
