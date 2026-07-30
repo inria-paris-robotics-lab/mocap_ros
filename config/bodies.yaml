@@ -2,13 +2,15 @@
 qualisys_ip: "192.168.75.4"
 publishing_freq: 300      # Hz, must be in [1, 300]
 ref_frame: "base_link"
-
+pose_timeout: 0.5
 bodies:
-  - name: "cube"
-    base_frame: "cube/base"
-    # publish_odometry defaults to false
+  - name: "tiago_base" # Body name exactly as defined in the Qualisys project
+    tf_frame_name: "tiago_base_mocap" # TF child frame id. Defaults to '<name_lowercase>/base'
+    publish_odometry: True # publish_odometry defaults to false
+    #odometry_topic: "cube/odom" # Odometry topic name. Defaults to '<name_lowercase>/odometry/mocap'
 
-  - name: "origin"
-    base_frame: "origin/base"
+  - name: "tiago_wrist"
+    tf_frame_name: "tiago_wrist_mocap"
+    publish_odometry: True # publish_odometry defaults to false
     # publish_odometry defaults to false
 
